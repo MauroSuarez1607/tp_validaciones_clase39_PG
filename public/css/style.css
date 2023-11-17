@@ -97,16 +97,27 @@ input, select{
   height: 25px;
 }
 .is-valid {
-  color: #198754;
+  border-color: #0B5ED7;
 }
 
 .is-invalid {
-  color: #842029;
+  border-color: #BB2D3B;  
 }
 
 .alert-warning{
   color:#842029;
   background-color: #F8D7DA;
+  text-align: center;
+  border-radius: 10px;
+  margin: 5px auto;
+  width: 80%;
+}
+
+.alert-info {
+  color: #198754;
+  background-color: greenyellow;
+  margin: 5px auto;
+  width: 80%;
   text-align: center;
   border-radius: 10px;
 }

@@ -17,11 +17,17 @@
     <section id="formulario" >
         <article class="mostrarFormulario">
             <ul class="errores"></ul>
-            <form class="form" action="/movies/create" method="POST">
+            <form class="form" id="formAdd" action="/movies/create" method="POST">
                 <label for="title">Titulo </label>
-                <div><input type="text" name="title" id="title" ></div>
+                <div>
+                    <input type="text" name="title" id="title" >
+                    <p id="msg-title"></p>
+                </div>
                 <label for="rating">Calificación </label>
-                <div><input type="number" name="rating" id="rating" placeholder="Indicar valor entre 0 y 10"> </div>
+                <div>
+                    <input type="number" name="rating" id="rating" placeholder="Indicar valor entre 0 y 10">
+                    <p id="msg-rating"></p>
+                </div>
                 <label for="awards">Premios </label>
                 <div><input type="number" name="awards" id="awards" placeholder="Indicar valor entre 0 y 10"></div>
                 <label for="release_date">Fecha de creación </label>
@@ -38,11 +44,16 @@
                     </select>
                 </div>
                 <br>
+                <ul id="box-errors">
+
+                </ul>
+                <br>
                 <div> <button class="botonAgregar" type="submit">Agregar</button>
                 
                 <a  class="botonVolver" href="/movies">Listado de Películas</a></div>
             </form>
         </article>
     </section>
+    <script src="/js/moviesAddValidation.js"></script>
 </body>
 </html>
